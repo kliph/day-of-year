@@ -3,3 +3,8 @@ Show the current day of the year.
 
 * To start
 =(figwheel-up)=
+
+* To deploy
+=lein heroku deploy=
+
+Heroku's default Clojure buildpack doesn't seem to handle building the npm deps yet.  So we'll do it on the local machine and push the jar up to Heroku.

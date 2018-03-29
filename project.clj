@@ -1,4 +1,4 @@
-(defproject day-of-year "0.1.0-SNAPSHOT"
+(defproject day-of-year "1.0.0"
   :description "Show the current day of the year"
   :url "https://day-of-year.herokuapp.com"
   :license {:name "MIT"
@@ -15,8 +15,9 @@
                  [environ "1.1.0"]]
   :plugins [[environ/environ.lein "0.3.1"]
             [lein-cljsbuild "1.1.7"]
-            [lein-npm "0.6.2"]
+            [lein-heroku "0.5.3"]
             [lein-figwheel "0.5.13"]]
+  :heroku {:app-name "day-of-year"}
   :hooks [environ.leiningen.hooks]
   :figwheel {:css-dirs ["resources/public/css"]
              :server-port 3450}
@@ -50,5 +51,5 @@
                                                         :output-dir "resources/public/js/out"
                                                         :npm-deps {:date-fns "1.29.0"}
                                                         :install-deps true
-                                                        :optimizations :none
+                                                        :optimizations :advanced
                                                         :pretty-print false}}]}}})
