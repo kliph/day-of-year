@@ -1,4 +1,4 @@
-(defproject day-of-year "1.0.0"
+(defproject day-of-year "1.1.0"
   :description "Show the current day of the year"
   :url "https://day-of-year.herokuapp.com"
   :license {:name "MIT"

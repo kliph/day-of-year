@@ -1,0 +1,16 @@
+body {
+  background: #f0e9e1;
+}
+
+section {
+  margin: 0 auto;
+  text-align: center;
+}
+
+.value {
+  font-size: 20rem;
+  padding-top: 10%;
+  padding-bottom: 10%;
+  color: #333333;
+  font-family: Futura, sans-serif;
+}

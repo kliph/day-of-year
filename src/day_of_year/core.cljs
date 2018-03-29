@@ -6,6 +6,8 @@
 (def by-id goog.dom.getElement)
 
 (defn app-container []
-  [:h1 {} (date-fns/format (js/Date.) "DDDD")])
+  [:section {}
+   [:div.value {}
+    (date-fns/format (js/Date.) "DDDD")]])
 
 (r/render-component [app-container] (by-id "app"))
