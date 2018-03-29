@@ -1,3 +1,4 @@
+#+html:<a href="https://day-of-year.herokuapp.com"><img src="http://heroku-badge.herokuapp.com/?app=day-of-year&style=flat&svg=1" /></a>
 * day-of-year
 Show the current day of the year.
 
