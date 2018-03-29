@@ -50,5 +50,5 @@
                                                         :output-dir "resources/public/js/out"
                                                         :npm-deps {:date-fns "1.29.0"}
                                                         :install-deps true
-                                                        :optimizations :advanced
+                                                        :optimizations :none
                                                         :pretty-print false}}]}}})
