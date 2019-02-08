@@ -1,4 +1,4 @@
-(defproject day-of-year "1.2.0"
+(defproject day-of-year "1.2.1"
   :description "Show the current day of the year"
   :url "https://day-of-year.herokuapp.com"
   :license {:name "MIT"
@@ -13,17 +13,16 @@
                  [ring/ring-jetty-adapter "1.6.2"]
                  [ring/ring-ssl "0.3.0"]
                  [environ "1.1.0"]]
-  :plugins [[environ/environ.lein "0.3.1"]
+  :plugins [[lein-environ "1.1.0" :hooks false]
             [lein-cljsbuild "1.1.7"]
             [lein-heroku "0.5.3"]
             [lein-figwheel "0.5.13"]]
   :heroku {:app-name "day-of-year"}
-  :hooks [environ.leiningen.hooks]
   :figwheel {:css-dirs ["resources/public/css"]
              :server-port 3450}
   :uberjar-name "day_of_year.jar"
-  :profiles {:dev {:dependencies [[com.cemerick/piggieback "0.2.2"]
-                                  [figwheel-sidecar "0.5.13"]
+  :profiles {:dev {:dependencies [[cider/piggieback "0.4.0"]
+                                  [figwheel-sidecar "0.5.18"]
                                   [binaryage/devtools "0.9.4"]]
                    :source-paths ["src" "dev"]
                    :cljsbuild {:builds [{:id "dev"
@@ -37,6 +36,7 @@
                                                     :optimizations :none
                                                     :npm-deps {:date-fns "1.29.0"}
                                                     :install-deps true
+                                                    :verbose true
                                                     :recompile-dependents true
                                                     :source-map true}}]}}
              :uberjar {:env {:production true}
