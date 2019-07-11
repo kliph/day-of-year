@@ -3,5 +3,8 @@
     "@cljs-oss/module-deps": "^1.1.1",
     "cached-path-relative": ">=1.0.2",
     "date-fns": "^1.29.0"
+  },
+  "devDependencies": {
+    "lodash": "^4.17.14"
   }
 }
