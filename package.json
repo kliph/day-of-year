@@ -5,6 +5,6 @@
     "date-fns": "^1.29.0"
   },
   "devDependencies": {
-    "lodash": "^4.17.19"
+    "lodash": "^4.17.21"
   }
 }
